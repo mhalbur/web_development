@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Bootstrap !-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--outside sources (bootstrap & jquery) !-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"> </script>
+
+<!-- Scripts and Style Sheets !-->
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:900" rel="stylesheet">
+</head>
+
+
+<!--Tab title <!-->
+<title>
+	Store
+</title>
+
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#collapse" >
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div><!-- closing navbar-header -->
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/services">SERVICES</a></li>
+                    <li><a href="/store">STORE</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
+  <div class = "header">
+  <img src="{{ url_for('static', filename='store.jpg') }}" style = "max-width: 100%;">
+      <div class="centered"><h1>Store</h1></div>
+  </div>
+
+
+<div class = "container-fluid">
+    <h3 style = "color: white; font-size: 52px; margin: 0 auto; text-align: center; margin-top: 30px;">For Sale:</h3>
+    <a href = "/contact"><h3 style = "font-size: 28px; color: white; margin: 0 auto; text-align: center;">Click here to contact me for inquiries about purchase</h3></a>
+
+    <div class = "store">
+    <section class = "col-md-6">
+        <img src="{{ url_for('static', filename='1_gun.jpg') }}">
+        <h3>H&R Sportsman Model 999 22LR</h3>
+        <p>Used: Excellent Condition</p>
+        <p>$450</p>
+    </section>
+    <section class = "col-md-6">
+        <img src="{{ url_for('static', filename='2_gun.jpg') }}" >
+        <h3>Savage Axis XP <small style = "color: #C0C0C0;">(6.5 Creedmoor with 3x9 Weaver Scope)</small></h3>
+        <p>Condition: New</p>
+        <p>$349</p>
+    </section>
+
+    <section class = "col-md-6">
+        <img src="{{ url_for('static', filename='3_gun.jpg') }}" >
+        <h3>Savage Trophy Hunter XP</h3>
+        <p>Condition: New</p>
+        <p>$425</p>
+    </section>
+    <section class = "col-md-6">
+        <img src="{{ url_for('static', filename='4_gun.jpg') }}" >
+        <h3>Savage Model 815 <small style = "color: #C0C0C0;">(Used 3x9 Scope in 17 HMR Bolt Action)</small></h3>
+        <p>Condition: New</p>
+        <p>$279</p>
+    </section>
+
+    <section class = "col-md-6">
+        <img src="{{ url_for('static', filename='5_gun.jpg') }}" >
+        <h3>Bushmaster AR 15 223 or 5.56 Model XM15-E2S</h3>
+        <p>Condition: Used</p>
+        <p>$995: With L3 EOTech <small>or</small> $595: Without L3 EOTech</p>
+    </section>
+
+    <section class = "col-md-6">
+        <img src="{{ url_for('static', filename='7_gun.jpg') }}" >
+        <h3>AR-7 Explorer Survival Gun 22L</h3>
+        <p>Condition: New</p>
+        <p>$100</p>
+    </section>
+    <section class = "col-md-6">
+        <img src="{{ url_for('static', filename='9_gun.jpg') }}" >
+        <h3>Hi Point 9mm Carbine Model 9TS</h3>
+        <p>Condition: New</p>
+        <p>$279</p>
+    </section>
+
+    <section class = "col-md-6">
+        <img src="{{ url_for('static', filename='6_gun.jpg') }}" >
+        <h3>New Delta Upper with Noreen Lower AR 15 <br> <small style = "color: #D8D8D8;">With 223 Wylde Barrel Key Mod Hand Guard</small></h3>
+        <p>Condition: New</p>
+        <p>$474</p>
+    </section>
+
+        <section class = "col-md-6">
+        <img src="{{ url_for('static', filename='no-image-available.jpg') }}" >
+        <h3>Aprox. 100 Round AR 15 in Blackout with Red Dot Site</h3>
+        <p>Condition: Slightly Used</p>
+        <p>$649</p>
+    </section>
+
+        </div>
+
+</div>
+
+
+</body>
