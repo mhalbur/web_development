@@ -1,0 +1,22 @@
+{% include 'navigation_bars/base.html' %}
+
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <h1 class="modal-card-title">Insert Reciepe</h1>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <form method="POST" action="/handle_new_recipe">
+        {{ form.recipe_name }}<br>
+        {{ form.recipe_type }}<br>
+        {{ form.recipe_origin }}<br>
+        {{ form.recipe_preheat }}<br>
+        {{ form.recipe_ingredients }}<br>
+        {{ form.recipe_directions }}<br>
+        {{form.submit_recipe}}
+      </form>
+    </section>
+  </div>
+</div>

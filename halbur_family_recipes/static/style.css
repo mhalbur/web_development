@@ -1,0 +1,42 @@
+body {
+  background-image: url('/static/imgs/grey-background1.jpg');
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 48px;
+  margin: 5px;
+  color: #86C232;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #222629;
+  border-bottom: 5px solid #474B4F;
+  padding: 2%;
+}
+
+/* Forms */
+input {
+  width: 50% !important;
+  margin: 5px;
+}
+
+textarea {
+  width: 80% !important;
+  margin: 5px;
+  height: 150px;
+}
+
+select {
+  width: 50% !important;
+  margin: 5px;
+}
+
+/*
+green: #61892F
+light green: #86C232
+black: #222629
+dark grey: #474B4F
+grey: #6B6E70
+*/
