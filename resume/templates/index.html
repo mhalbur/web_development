@@ -1,0 +1,618 @@
+<head>
+  <!--Bootstrap !-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% include "base.html"%}
+</head>
+<title>Michaela Roberts</title>
+
+<body id="mobile_background">
+
+  <div style="width: 100%; max-width: 100%; margin-left: -5px;" id="header">
+    <div class="center" id="headerc">
+      <div class="home-intro">
+        <div class="row">
+          <section class="col-md-12">
+            <div class="name">
+              <img src="{{ url_for('static', filename='imgs/my-logo-updated.png') }}" style="width: 500px; height: auto" alt="logo">
+            </div>
+          </section>
+
+          <h2 style="margin-bottom: 40px;">Data Engineer</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+<div id="pageHr">
+</div
+!-->
+
+
+  <div style="width: 99.99%; max-width: 100%;" id="page">
+
+    <!-- First row of info -picture, name, and statement !-->
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <section class="col-xs-12 col-lg-3">
+          <div class="main-images">
+            <div class="main-portrait">
+              <img class="img-circle" src="{{ url_for('static', filename='imgs/my-picture.jpg') }}" alt="My Portrait">
+            </div>
+
+            <div class="responsive-media">
+              <div class="responsive-image">
+                <img class="img-circle" src="{{ url_for('static', filename='imgs/my-picture.jpg') }}"  align="middle" alt="My Portrait">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="about-section">
+        </div>
+
+        <section class="col-xs-12 col-lg-9">
+          <div class="main-title">
+            <h1>I am a <span id="example2"></span></h1>
+          </div>
+          <div class="talk-bubble">
+            <p> An enthusiastic Systems Engineer who primarily develops in Python. 
+                Two years of experience doing ETL at Meredith Corporation primarily using Python, SQL, AWS, Snowflake, and Teradata. 
+                Enjoys and has experience in Application Development. 
+                Capable and eager to do both back-end and front-end development. 
+                Additional skills in HTML, CSS, Flask, and Javascript. 
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+    <!-- end of personal statement, picture, and name !-->
+    <br /><br /><br /><br />
+
+
+    <!-- begin of skills !-->
+
+
+    <div id="skills">
+    </div>
+
+    <!-- programming language skills !-->
+    <div class="the-skills-styling">
+      <h2>Career Related Skills</h2>
+      <nav class="accordion arrows">
+        <header class="box">
+          <label for="acc-close" class="box-title">Skills</label>
+        </header>
+        <input type="radio" name="accordion" id="cb1" />
+        <section class="box">
+          <label class="box-title" for="cb1">Programming Languages</label>
+          <label class="box-close" for="acc-close"></label>
+          <div class="box-content" onclick="move()">
+            <ul>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript/JQuery/Ajax</li>
+          </div>
+
+        </section>
+
+        <!-- Professional Skills !-->
+        <input type="radio" name="accordion" id="cb2" />
+        <section class="box">
+          <label class="box-title" for="cb2">Databases</label>
+          <label class="box-close" for="acc-close"></label>
+          <div class="box-content">
+            <ul>
+              <li>Teradata</li>
+              <li>Snowflake</li>
+              <li>Oracle</li>
+            </ul>
+          </div>
+        </section>
+
+        <!--General Skills !-->
+        <input type="radio" name="accordion" id="cb3" />
+        <section class="box">
+          <label class="box-title" for="cb3">Tools/Other</label>
+          <label class="box-close" for="acc-close"></label>
+          <div class="box-content">
+            <ul>
+              <li>Linux/Ubuntu</li>
+              <li>Git/Bash command line</li>
+              <li>Amazon Web Services (S3/DynamoDb/EC2 servers)</li>
+              <li>WSGI/Apache Web server</li>
+              <li>Jams scheduling system</li>
+              <li>Flask</li>
+            </ul>
+          </div>
+        </section>
+        <input type="radio" name="accordion" id="acc-close" />
+      </nav>
+    </div>
+
+    <!-- end of skills !-->
+    <br />
+
+    <!-- education and experience !-->
+
+    <div class="education-experience-styling">
+      <div id="education-border">
+        <h1>Education and Experience</h1>
+        <div class="container-fluid">
+          <div class="row">
+
+            <section class="col-md-12 col-sm-12">
+              <div class="education-experience-content">
+                <div class="education-experience-heading">
+                  <h2>Meredith Corporation</h2>
+                </div>
+                <div class="education-experience-paragraph">
+                  <p>
+                    <ul>
+                      <li><strong>Title: </strong>Data Engineer</li>
+                      <li><strong>Employement: </strong>October 2017 - Present</li>
+                      <li><strong>Highlights</strong>
+                        <ul>
+                          <li>Designs, develops and maintains simple to complex python programs that automates data processing</li>
+                          <li>Programs scripts to collects, alters, and loads data from APIs and/or vendors</li>
+                          <li>Integrates consumer, digital, and other business data into Snowflake, Oracle, and Teradata </li>
+                          <li>Maintains, supports, and improves current infrastructure</li>
+                          <li>Performs systems analysis with a focus on internal standards, coding and testing</li>
+                          <li>Designs and develops interactive tool including data visualizations for the business</li>
+                          <li>Developed and maintains an ETL Dashboard to analyze production jobs, business and business analyst reports, servers, and enhance team production using Snowflake, Python, Flask, HTML, CSS, and Javascript</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </section>
+
+
+          </div>
+          <br> <br> <br> <br> <br>
+          <div class="row">
+            <section class="col-md-6">
+              <div class="education-experience-content">
+                <div class="education-experience-heading">
+                  <h2>Iowa State University</h2>
+                </div>
+                <div class="education-experience-paragraph">
+                  <p>
+                    <ul>
+                      <li><strong>Bachelor of Science: </strong>Management Information Systems</li>
+                      <li>
+                        <strong>Emphasis: </strong>Computer programming
+                      </li>
+                      <li><strong>Attendance: </strong>August 2014 - December 2017</li>
+                      <li><strong>Program highlights</strong>
+                        <ul>
+                          <li>Business programming (java and python)</li>
+                          <li>Database management (sql and oracle)</li>
+                          <li>Data analytics (tableau)</li>
+                          <li>Project management.</li>
+                          <br>
+                          <br>
+                        </ul>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="col-md-6 col-sm-12 ">
+              <div class="education-experience-content">
+                <div class="education-experience-heading">
+                  <h2>Iowa State University</h2>
+                </div>
+                <div class="education-experience-paragraph">
+                  <p>
+                    <ul>
+                      <li><strong>Title: </strong>Web Design/Developer Intern</li>
+                      <li><strong>Employment: </strong>May 2017 - November 2017</li>
+                      <li><strong>Highlights: </strong>
+                        <ul>
+                          <li>Designed, debugged, and published additions to the College of Human Sciences website</li>
+                          <li>Converted non-responsive web pages to responsive, mobile-friendly pages using BootStrap</li>
+                          <li>Assisted with updating the new College of Human Science 1.0 website using HTML, Javascript, Jquery, CSS, PHP, BootStrap, and WordPress</li>
+                          <li>Worked with the departments of the College of Human Sciences to maintain and update current departmental pages, and to ensure the new departmental pages were up to departmental standards</li>
+                        </ul>
+                  </p>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="mis-course" style="max-width: 100%;">
+      <div class="container-fluid">
+        <h2>Continuing Education</h2>
+        <h3 style="text-align: center;"><u><b>Books & Codecamps</b></u></h3>
+        <ul style="text-align: center; list-style-type: none;">
+          <li style="text-align: center;"><b>
+              Murray, Scott. Interactive Data Visualization for the Web: an Introduction to Designing with D3. OReilly., 2017.
+            </b></li>
+          <li style="text-align: center;"><b>
+              Duckett, Jon. JavaScript & JQuery ; HTML & CSS. John Wiley & Sons, 2014.
+            </b></li>
+          <li style="text-align: center;"><b>
+              <a href="https://www.freecodecamp.org/mhalbur">Free Code Camp Tutorials</a>
+            </b></li>
+          <li style="text-align: center;"><b>
+              <a href="https://www.sololearn.com/Profile/789922">Solo Learn Tutorials</a>
+            </b></li>
+        </ul>
+      </div>
+      <br />
+    </div>
+
+
+    <div id="contact-banner" style="max-width: 100%;">
+      <Br />
+      <br />
+      <div id="main-social-container" class="container">
+        <div id="social-container">
+          <div class="row">
+            <h2><u>Connect with me</u></h2>
+            <!-- Facebook -->
+            <div class="col-xs-2 icon-xl nopadding" id="FB">
+              <a class="row" href="https://www.facebook.com/mhalbur" target="blank">
+                <div class="icon facebook eclipse">&#xf09a;</div>
+              </a>
+            </div>
+
+            <!-- github -->
+            <div class="col-xs-2 icon-xl nopadding" id="TW">
+              <a class="row" href="https://github.com/halbur-roberts" target="blank">
+                <div class="icon github eclipse">&#xf113;</div>
+              </a>
+            </div>
+
+            <!-- Linkedin -->
+            <div class="col-xs-2 icon-xl nopadding" id="LI">
+              <a class="row" href="https://www.linkedin.com/in/halbur-roberts/" target="blank">
+                <div class="icon linkedin eclipse">&#xf0e1;</div>
+              </a>
+            </div>
+
+          </div>
+          <div class="row">
+
+
+
+            <!-- address -->
+            <h2><u>Get in touch?</u></h2>
+            <div class="col-xs-2 icon-xl nopadding" id="YT">
+              <a class="row" href="#">
+                <div class="icon address eclipse">&#xf015;</div>
+              </a>
+            </div>
+
+            <!-- phone -->
+            <div class="col-xs-2 icon-xl nopadding" id="GO">
+              <a class="row" href="#">
+                <div class="icon phone eclipse">&#xf10b;</div>
+              </a>
+            </div>
+
+
+            <!-- email-->
+            <div class="col-xs-2 icon-xl nopadding" id="IG">
+              <a class="row" href="#">
+                <div class="icon email eclipse">&#xf0e0;</div>
+              </a>
+            </div>
+
+          </div>
+          <div class="row" id="append-here"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile_contact_banner">
+      <h2>Contact Me</h2>
+      <p>
+        <b>Phone:</b> 515-290-8689
+      </p>
+      <p>
+        <b>Email:</b> halbur.roberts@gmail.com
+      </p>
+      <p>
+        <b>Address:</b> Des Moines, Iowa
+      </p>
+      <br />
+    </div>
+
+    <!-- <div id="mobile_portfolio">
+      <h2>Sample Portfolio</h2>
+      <img src="Portfolio\2.jpg" style="height: auto; max-width: 100%;" />
+      <img src="Portfolio\4.jpg" style="height: auto; max-width: 100%;" />
+      <img src="Portfolio\5.jpg" style="height: auto; max-width: 100%;" />
+      <img src="Portfolio\6.jpg" style="height: auto; max-width: 100%;" />
+    </div>
+
+    <div id="portfolio" style="max-width: 100%;">
+
+      <h2>My Portfolio</h2>
+
+      <div class="row" style="padding: 30px;" style="max-width: 100%;">
+
+        <div class="slider" id="main-slider" style="max-width: 100%;">
+          <div class="slider-wrapper">
+            <img alt="First" class="slide" src="Portfolio\1.jpg" style="width: 1193px; height: auto; max-width: 100%;" />
+            <img alt="Second" class="slide" src="Portfolio\2.jpg" style="width: 1193px; height: auto; max-width: 100%;" />
+            <img alt="Third" class="slide" src="Portfolio\3.jpg" style="width: 1193px; height: auto; max-width: 100%;" />
+            <img alt="Fourth" class="slide" src="Portfolio\4.jpg" style="width: 1193px; height: auto; max-width: 100%;" />
+            <img alt="Fifth" class="slide" src="Portfolio\5.jpg" style="width: 1193px; height: auto; max-width: 100%;" />
+            <img alt="Sixth" class="slide" src="Portfolio\6.jpg" style="width: 1193px; height: auto; max-width: 100%;" />
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div> -->
+
+</body>
+
+
+
+
+<footer>
+
+  <script>
+    $(document).ready(function() {
+
+      // Removed after start
+      $('#append-here').append("<h3>Hover over the icons for more information.</h3>");
+
+
+
+      // Social Colors
+      var facebookBorderColor = "#125688";
+      var githubBorderColor = "#125688";
+      var phoneBorderColor = "#125688";
+      var linkedinBorderColor = "#125688";
+      var emailBorderColor = "#125688";
+      var addressBorderColor = "#125688";
+
+      // Wrap around each pop up icon
+      var before = '<div class="row"><div class="col-md-12">';
+      var after = '</div></div>';
+
+      $(".col-xs-2.icon-xl").hover(
+        function() {
+          // clear it out
+          $('#append-here').children().remove();
+
+          switch ($(this).attr('id')) {
+            // Facebook
+            case "FB":
+              $('#append-here').append(before + "<h2><u>Facebook</u></h2> @mhalbur" + after);
+              $('#append-here').css('color', facebookBorderColor);
+              break;
+
+              // github
+            case "TW":
+              $('#append-here').append(before + '<h2><u>GitHub</u></h2> halbur-roberts' + after);
+              $('#append-here').css('color', githubBorderColor);
+              break;
+
+              // phone number
+            case "GO":
+              $('#append-here').append(before + '<h2><u>Phone number</u></h2> (515)-290-8689' + after);
+              $('#append-here').css('color', phoneBorderColor);
+              break;
+
+              // LinkedIn
+            case "LI":
+              $('#append-here').append(before + '<h2><u>LinkedIn</u></h2> halbur-roberts' + after);
+              $('#append-here').css('color', linkedinBorderColor);
+              break;
+
+              // email
+            case "IG":
+              $('#append-here').append(before + '<h2><u>Email</u></h2> halbur.roberts@gmail.com' + after);
+              $('#append-here').css('color', emailBorderColor);
+              break;
+
+              // address
+            case "YT":
+              $('#append-here').append(before + '<h2><u>Address</u></h2> 5137 Walnut Ridge Dr <br /> Des Moines, Iowa' + after);
+              $('#append-here').css('color', addressBorderColor);
+              break;
+
+              // Default
+            default:
+              $('#append-here').append("");
+          }
+
+        },
+        function() {
+          // Do nothing.
+          console.log($(this));
+        });
+    });
+  </script>
+
+  <script>
+    $('#example2').typeIt({
+      strings: ["Systems Engineer.", "debugger.", "designer.", "back-end developer.", "front-end developer.", "programmer.", "girl in code."],
+      speed: 50,
+      breakLines: false,
+      autoStart: false
+    });
+  </script>
+
+
+  <script>
+    (function() {
+
+      function Slideshow(element) {
+        this.el = document.querySelector(element);
+        this.init();
+      }
+
+      Slideshow.prototype = {
+        init: function() {
+          this.wrapper = this.el.querySelector(".slider-wrapper");
+          this.slides = this.el.querySelectorAll(".slide");
+          this.previous = this.el.querySelector(".slider-previous");
+          this.next = this.el.querySelector(".slider-next");
+          this.index = 0;
+          this.total = this.slides.length;
+          this.timer = null;
+
+          this.action();
+          this.stopStart();
+        },
+        _slideTo: function(slide) {
+          var currentSlide = this.slides[slide];
+          currentSlide.style.opacity = 1;
+
+          for (var i = 0; i < this.slides.length; i++) {
+            var slide = this.slides[i];
+            if (slide !== currentSlide) {
+              slide.style.opacity = 0;
+            }
+          }
+        },
+        action: function() {
+          var self = this;
+          self.timer = setInterval(function() {
+            self.index++;
+            if (self.index == self.slides.length) {
+              self.index = 0;
+            }
+            self._slideTo(self.index);
+
+          }, 4000);
+        },
+        stopStart: function() {
+          var self = this;
+          self.el.addEventListener(function() {
+            clearInterval(self.timer);
+            self.timer = null;
+
+          }, false);
+          self.el.addEventListener(function() {
+            self.action();
+
+          }, false);
+        }
+
+
+      };
+
+      document.addEventListener("DOMContentLoaded", function() {
+
+        var slider = new Slideshow("#main-slider");
+
+      });
+
+
+    })();
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById('Manager');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+  </script>
+
+  <script>
+    function mouseAddress() {
+      var y = document.getElementById('address_mouse');
+      if (y.style.display === 'none') {
+        y.style.display = 'block'
+      } else {
+        y.style.display = 'none'
+      }
+    }
+  </script>
+
+
+  <script>
+    function myFunction1() {
+      var x = document.getElementById('area');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+  </script>
+
+  <script>
+    function myFunction2() {
+      var x = document.getElementById('general');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+  </script>
+
+  <script>
+    function myFunction3() {
+      var x = document.getElementById('Corporate');
+      if (x.style.display === 'none') {
+        x.style.display = 'block';
+      } else {
+        x.style.display = 'none';
+      }
+    }
+  </script>
+
+</footer>
