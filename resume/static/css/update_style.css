@@ -1,0 +1,387 @@
+/* 
+    NEW CSS FILE THAT I CREATED TO TRANSFER CUSTOM DESIGN TO CLEAN UP/ORGANIZE
+    BECAUSE THE OTHER ONE IS GROSS, UNORGANIZED, AND OLD.
+*/
+
+body {
+    max-width: 100%;
+    background: white;
+}
+
+/* NAVIGATION BAR */
+
+.navbar{
+    background-color: #474747;
+    color: white;
+    height: 130px;
+    width: 100%;
+    position: fixed;
+    border-bottom: #00b7eb 5px solid;
+}
+
+.navbar-end{
+    margin-right: 30px;
+}
+
+.navbar-item{
+    color: white;
+    font-size: 22px;
+}
+
+
+/* BACKGROUND CLASSES */
+  
+.gray_background{
+    background: url(../imgs/grey-background1.jpg);
+}
+
+
+/* ABOUT ME */
+.about_column {
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    margin-top: 10px;
+    border: #474747 5px solid;
+}
+
+.white_column{
+    background: white;
+    padding: 2%;
+}
+
+.picture_column{
+    background: white;
+}
+
+.picture_column img{
+    background: white;
+}
+
+/* FONTS */
+h1 {
+    color: #474747;
+    text-align: center;
+    font-family: 'Passion One',cursive;
+    font-size: 58px;
+}
+
+h2 {
+    padding: 10px;
+    color: #474747;
+    text-align: center;
+    font-family: 'Passion One',cursive;
+    font-size: 48px;
+}
+
+h3{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 32px;
+    text-align: center;
+}
+
+p{
+    font-size: 24px;
+}
+
+.handwriting{
+    font-family: 'Gochi Hand', cursive;
+}
+
+/* RESUME */
+#header {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../imgs/homepage-background.jpg) no-repeat top;
+    background-size: cover;
+    max-width: 100%;
+}
+
+#home-intro {
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    max-width: 100%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#home-intro h1 {
+    color: white;
+    text-align: center;
+    font-size: 58px;
+}
+  
+#home-intro h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+#page{
+    z-index: 100;
+    position: relative;
+    top: 80%;
+    width: 100%;
+    background: url(../imgs/main-background.jpg);
+    max-width: 100%;
+}
+
+.biography_span{
+    margin-bottom: 3%;
+}
+
+.main-portrait img{
+    z-index: 10;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-top: 60px;
+}
+
+.responsive-image img {
+    width: 250px;
+    height: 250px;
+}
+
+#main-title h1{
+    position: absolute;
+    max-width: 100%;
+    margin-top: 7%;
+    margin-left: -3%;
+    font-family: 'Acme',sans-serif;
+    font-size: 50.7px;
+}
+  
+#main-title span {
+    color: #42a2ff;
+}
+
+#talk-bubble {
+    z-index: 5;
+    position: absolute;
+    width: 115%;
+    height: 140px;
+    margin-top: 168px;
+    margin-left: -23%;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 20%;
+    background: rgba(192, 192, 192, .75);
+    font-size: 16px;
+}
+
+.outer_border{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.skills_span{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border-bottom: #474747 solid 5px;
+    border-top: #474747 solid 5px;
+}
+
+.skills{
+    margin: 1%;
+    color: white;
+    border: 3px #474747 solid;
+}
+
+.education-span{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background: url(main-background.jpg);
+    border-bottom: #474747 solid 5px;
+  }
+  
+#education-border {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 40px;
+    border: dotted 8px #474747;
+}
+
+.education-heading {
+    overflow: auto;
+    background-color: #474747;
+    color: white!important;
+    border-bottom:#42a2ff solid 5px;
+    padding: .5%;
+}
+
+.education-heading h2{
+    color: white!important;
+}
+  
+.education-content {
+    border: 2px solid rgba(169, 169, 169, .2);
+    background-color: white;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .5);
+    padding: 2%;
+    font-size: 18px;
+}
+
+.education-content ul li{
+    list-style: none;
+}
+
+.education-content ul li ul li{
+    list-style: disc outside none;
+    display: list-item;
+    margin-left: 3em;
+}
+
+.social_span{
+    background: url(../imgs/grey-background1.jpg);
+    padding: 5%;
+    text-align: center;
+}
+
+.icon-xl{
+    padding-left: 5%;
+}
+
+.social_span .icon-xl .icon {
+    color: #474747;
+    overflow: visible;
+    border: 6px solid #474747;
+    background-color: #fff;
+    text-shadow: none;
+    font-size: 42px;
+    line-height: 52px;
+}
+  
+.social_span .eclipse {
+    height: 63px;
+    border-radius: 50px;
+    text-align: center;
+}
+  
+  
+.social_span .icon {
+    position: relative;
+    width: 70px;
+    height: 65px;
+    float: left;
+    margin: 10px;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    text-align: center;
+    font-family: 'FontAwesome';
+    font-size: 35px;
+    line-height: 65px;
+}
+  
+  /* Hover Colors */
+.facebook:hover {
+    color: #007bb5 !important;
+    border-color: #007bb5 !important;
+}
+  
+.github:hover {
+    color: #007bb5 !important;
+    border-color: #007bb5 !important;
+}
+  
+.phone:hover {
+    color: #007bb5 !important;
+    border-color: #007bb5 !important;
+}
+  
+.linkedin:hover {
+    color: #007bb5 !important;
+    border-color: #007bb5 !important;
+}
+  
+.email:hover {
+    color: #007bb5 !important;
+    border-color: #007bb5 !important;
+}
+  
+.address:hover {
+    color: #007bb5 !important;
+    border-color: #007bb5 !important;
+}
+  
+  
+#append-here {
+    width: 100%;
+    min-height: 200px;
+}
+
+div#append-here {
+    display: block;
+    color: #000;
+    font-size: 2em;
+}
+
+#mobile_contact_banner{
+    display: none;
+}
+  
+  
+/* MEDIA QUERIES */ 
+@media only screen and (max-width : 1020px) {
+    .about_column{
+        margin:0;
+        border:none;
+        
+    }
+    .white_column{
+        padding: 50px;
+        border-top:5px #474747 solid
+    }
+    .picture_column{
+        border-top:5px #474747 solid;
+        padding: 0;
+    }
+    /* Resume */ 
+    #header {
+        display: none;
+    }
+    #page {
+        background: none;
+        background-color: green;
+        background: white !important;
+        position: absolute;
+        top: 5%;
+    }
+    .responsive-media {
+        display: flex;
+        margin-top: 5%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-title h1 {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+      }
+    .talk-bubble {
+        position: relative;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border: dotted 7px black;
+        background: none;
+        text-align: center;
+    }
+    
+    #mobile_contact_banner {
+        width: 100%;
+        display: inline-block;
+        background: url(../imgs/grey-background1.jpg);
+        text-align: center;
+    }
+    .social_span{
+        display: none;
+    }
+}
