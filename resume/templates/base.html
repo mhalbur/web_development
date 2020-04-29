@@ -8,14 +8,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css"/>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
         <!--JAVASCRIPT PACKAGES-->
         <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
 
         <!--PERSONALIZE CSS FILE-->
         <link rel="stylesheet" href="{{ url_for('static', filename='css/update_style.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}">
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/styling.css') }}"> -->
+
+        <!--SCROLL-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <!--FONTS-->
         <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
@@ -23,10 +26,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" /> 
     </head>
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div id="navbarBasicExample" class="navbar-menu">''
-            <div class="navbar-start">
-                <h2 class="handwriting" style="color:white; font-size:64px;">Michaela</h2>
-            </div>
+        <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
                 <a class="navbar-item">Resume</a>
                 <a class="navbar-item">Biography</a>

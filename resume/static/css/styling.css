@@ -77,21 +77,19 @@ p{
   max-width: 100%;
 }
 
-.home-intro h1 {
-  max-width: 100%;
+#home-intro h1 {
   color: white;
   text-align: center;
   font-size: 58px;
 }
 
 .home-intro h2 {
-  max-width: 100%;
   color: white;
   text-align: center;
   font-size: 50px;
 }
 
-.home-intro {
+#home-intro {
   position: absolute;
   top: 45%;
   left: 49%;
@@ -191,8 +189,7 @@ p{
   max-width: 100%;
   margin-top: 7%;
   margin-left: -3%;
-  font-family: 'Acme',
-    sans-serif;
+  font-family: 'Acme',sans-serif;
   font-size: 50.7px;
 }
 
@@ -200,19 +197,6 @@ p{
   color: #42a2ff;
 }
 
-.talk-bubble {
-  z-index: 5;
-  position: absolute;
-  width: 115%;
-  height: 120px;
-  margin-top: 168px;
-  margin-left: -23%;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20%;
-  background: rgba(192, 192, 192, .75);
-  font-size: 16px;
-}
 
 /* media queries */
 @media only screen and (min-width : 1025px) {
@@ -880,10 +864,6 @@ input:checked+section.box .box-title:before {
 
 .popout {
   display: none;
-}
-
-#main-social-container {
-  max-width: 580px;
 }
 
 #append-here {
