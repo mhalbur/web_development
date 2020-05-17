@@ -1,5 +1,6 @@
-{% include "base.html"%}
+<div style = "position: fixed;">{% include "base.html"%}</div>
 <title>Michaela Roberts</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 
 <body>
 
@@ -9,12 +10,12 @@
       <h2 style = "margin-top:-30px;">Data Engineer</h2>
     </div>
   </div>
-
+  <br>
   <div id="page">
-    <div class = "biography_span">
+    <div id = "biography_span">
       <div class = "columns">
-        <div class="main-portrait column is-3">
-          <img  src="{{ url_for('static', filename='imgs/my-picture.jpg') }}" alt="My Portrait">
+        <div id="main-portrait" class="column is-3">
+          <img src="{{ url_for('static', filename='imgs/my-picture.jpg') }}" alt="My Portrait">
         </div>
         <div class="column">
           <div id="main-title">
@@ -70,16 +71,16 @@
 
     <!-- education and experience !-->
 
-    <div class="education-span">
+    <div id="education-span">
       <div id="education-border">
         <h1>Education and Experience</h1>
         <div class = 'column'> 
           <div class="column">
-            <div class="education-heading">
+            <div id="education-heading">
               <h2>Meredith Corporation</h2>
               <h3>Data Engineer - Business Intelligence</h3>
             </div>
-            <div class="education-content">
+            <div id="education-content">
               <ul>
                 <li><strong>Location: </strong>Des Moines, Iowa</li>
                 <li><strong>Employement: </strong>October 2017 - Present</li>
@@ -97,11 +98,11 @@
           </div>
 
           <div class = "column">
-            <div class="education-heading">
+            <div id="education-heading">
               <h2>Iowa State University</h2>
               <h3>Bachelor of Science</h3>
             </div>
-            <div class="column education-content">
+            <div id="education-content">
               <ul>
                 <li><strong>Degree: </strong>Management Information Systems</li>
                 <li><strong>Emphasis: </strong>Programming</li>
@@ -121,7 +122,7 @@
       </div>
     </div>
 
-    <div class="social_span">
+    <div id="social_span">
       <h2><u>Social</u></h2><br>
       <div class="columns">
         <!-- Facebook -->
@@ -158,31 +159,21 @@
       </div>
       <br>
       <br>
-      <br>
       <div id="append-here"></div>
     </div>
+
     <div id="mobile_contact_banner">
       <h2>Contact Me</h2>
-      <p>
-        <b>Phone:</b> 515-290-8689
-      </p>
-      <p>
-        <b>Email:</b> halbur.roberts@gmail.com
-      </p>
-      <p>
-        <b>Address:</b> Des Moines, Iowa
-      </p>
-      <br />
+      <p><b>Email:</b><br>halbur.roberts@gmail.com</p>
+      <p><b>Address:</b><br>Des Moines, Iowa</p>
     </div>
   </div>
-
 </body>
 
 
 
 
 <footer>
-
   <script>
     $(document).ready(function() {
 
