@@ -1,15 +1,9 @@
-<head>
-  <!--Bootstrap !-->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {% include "base.html"%}
-</head>
+{% include "base.html"%}
 <title>Michaela Roberts</title>
 
-<body id="mobile_background">
+<body>
 
-  <div style="width: 100%; max-width: 100%; margin-top:20px;" id="header">
+  <div id="header">
     <div id="home-intro">
       <h1>Michaela Roberts</h1><br>
       <h2 style = "margin-top:-30px;">Data Engineer</h2>
@@ -17,32 +11,25 @@
   </div>
 
   <div id="page">
-    <!-- First row of info -picture, name, and statement !-->
-    <div class = "row biography_span">
-      <section class="col-xs-12 col-lg-3">
-        <div class="main-portrait">
+    <div class = "biography_span">
+      <div class = "columns">
+        <div class="main-portrait column is-3">
           <img  src="{{ url_for('static', filename='imgs/my-picture.jpg') }}" alt="My Portrait">
         </div>
-        <div class="responsive-media" style="display:none;">
-          <div class="responsive-image">
-            <img src="{{ url_for('static', filename='imgs/my-picture.jpg') }}"  align="middle" alt="My Portrait">
+        <div class="column">
+          <div id="main-title">
+            <h1>I am a <span id="example2"></span></h1><br>
+          </div>
+          <div id="talk-bubble">
+            <p> A driven Data Engineer who loves programming in Python. 
+                Has experience in back-end and front-end development. 
+                Work experience in ETL at Meredith Corporation primarily using Python, SQL, AWS, Snowflake, and Teradata. 
+                Additional skills in HTML, CSS, Flask, and Javascript.
+            </p>
           </div>
         </div>
-      </section>
-      <section class="col-xs-12 col-lg-9">
-        <div id="main-title">
-          <h1>I am a <span id="example2"></span></h1>
-        </div>
-        <div id="talk-bubble">
-          <p> A driven Data Engineer who loves programming in Python. 
-              Has experience in back-end and front-end development. 
-              Work experience in ETL at Meredith Corporation primarily using Python, SQL, AWS, Snowflake, and Teradata. 
-              Additional skills in HTML, CSS, Flask, and Javascript.
-          </p>
-        </div>
-      </section>
+      </div>
     </div>
-    <!-- end of personal statement, picture, and name !-->
 
     <!-- begin of skills !-->
     <div class="gray_background skills_span">
@@ -102,7 +89,7 @@
                     <li>Programs scripts to collects, alters, and loads data from APIs and/or vendors</li>
                     <li>Integrates consumer, digital, and other business data into Snowflake, Oracle, and Teradata</li>
                     <li>Maintains, supports, and improves current infrastructure using Python</li>
-                    <li>Develops and maintains an ETL Dashboard to analyze and visualize production jobs, business and business analyst reports and servers</li>
+                    <li>Developed and maintains a web application to analyze and visualize production jobs, business and business analyst reports and servers</li>
                   </ul>
                 </li>
               </ul>
@@ -123,8 +110,9 @@
                   <ul>
                     <li>Business Programming (Java and Python)</li>
                     <li>Database Management (SQL and Oracle)</li>
-                    <li>Data analytics (Tableau)</li>
-                    <li>Project Management</li>
+                    <li>Data Analytics (Tableau)</li>
+                    <li>Project Management (Jira and Agile)</li>
+                    <li>Business: Management, Accounting, Marketing, and Finance</li>
                   </ul>
               </ul>
             </div>
@@ -292,7 +280,7 @@
 
   <script>
     $('#example2').typeIt({
-      strings: ["Data Engineer.", "debugger.", "designer.", "back-end developer.", "front-end developer.", "programmer.", "girl in code."],
+      strings: ["Data Engineer.", "debugger.", "back-end developer.", "front-end developer.", "programmer.", "girl in code."],
       speed: 50,
       breakLines: false,
       autoStart: false
