@@ -11,28 +11,19 @@ body {
 /* NAVIGATION BAR */
 
 .navbar{
-    background-color: #474747;
-    color: white;
-    height: 130px;
-    width: 100%;
-    border-bottom: #00b7eb 5px solid;
-    z-index: 200;
+	background-color: #474747;
+	border-bottom: white 3px solid;
+	color: white;
+	height: 100px;
+	position: fixed;
+	width: 100%;
 }
-
-.navbar-end{
-    margin-right: 30px;
-}
-
-.navbar-item{
-    color: white;
-    font-size: 22px;
-}
-
 
 /* BACKGROUND CLASSES */
   
 .gray_background{
     background: url(../imgs/grey-background1.jpg);
+    background-size: contain;
 }
 
 
@@ -59,37 +50,38 @@ body {
 }
 
 /* FONTS */
-h1 {
-    color: #474747;
-    text-align: center;
-    font-family: 'Passion One',cursive;
-    font-size: 58px;
+.handwriting{
+	font-family: 'gochi hand', cursive;
 }
 
-h2 {
-    padding: 10px;
-    color: #474747;
-    text-align: center;
-    font-family: 'Passion One',cursive;
-    font-size: 48px;
+h1{
+	color: #474747;
+	font-family: 'passion one',cursive;
+	font-size: 58px;
+	text-align: center;
+}
+
+h2{
+	color: #474747;
+	font-family: 'passion one',cursive;
+	font-size: 48px;
+	padding: 10px;
+	text-align: center;
 }
 
 h3{
-    font-family: 'Gochi Hand', cursive;
-    font-size: 32px;
-    text-align: center;
+	font-family: 'gochi hand', cursive;
+	font-size: 32px;
+	text-align: center;
 }
 
 p{
-    font-size: 24px;
-}
-
-.handwriting{
-    font-family: 'Gochi Hand', cursive;
+	font-size: 24px;
 }
 
 /* RESUME */
 #header {
+    margin-top: 100px;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -101,22 +93,10 @@ p{
 
 #home-intro {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 49%;
     max-width: 100%;
     transform: translateX(-50%) translateY(-50%);
-}
-
-#home-intro h1 {
-    color: white;
-    text-align: center;
-    font-size: 58px;
-}
-  
-#home-intro h2 {
-    color: white;
-    text-align: center;
-    font-size: 50px;
 }
 
 #page{
@@ -124,58 +104,56 @@ p{
     position: relative;
     top: 80%;
     width: 100%;
-    background: url(../imgs/main-background.jpg);
     max-width: 100%;
 }
 
 /* BIOGRAPHY */ 
 #biography_span{
-    margin-bottom: 5%;
-    margin-top: 5%;
-    background: url(../imgs/main-background.jpg);
+	background: url(../imgs/main-background.jpg);
+	background-size: cover;
+	padding-bottom: 5%;
 }
 
 #main-portrait{
-    z-index: 10;
-    position: relative;
-    margin-top: 5%;
-    /* margin-left: 20%; */
-    border-radius: 50%;
+	margin-top: 3%;
+	position: relative;
+	z-index: 10;
 }
 
 #main-portrait img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin-left: 5%;
+	border-radius: 50%;
+	height: 250px;
+	margin-left: 5%;
+	margin-top: 3%;
+	width: 250px;
 }
 
 #main-title h1{
-    position: absolute;
-    max-width: 100%;
-    margin-top: 7%;
-    margin-left: -3%;
-    margin-bottom: 3%;
-    font-family: 'Acme',sans-serif;
-    font-size: 50.7px;
-}
-  
-#main-title span {
-    color: #42a2ff;
+	font-family: 'acme',sans-serif;
+	font-size: 50.7px;
+	margin-bottom: 3%;
+	margin-left: -3%;
+	margin-top: 4%;
+	max-width: 100%;
+	position: absolute;
 }
 
-#talk-bubble {
-    z-index: 5;
-    position: absolute;
-    width: 93%;
-    height: 140px;
-    margin-top: 8.5%;
-    margin-left: -20%;
-    padding-top: 20px;
-    padding-right: 30px;
-    padding-left: 17%;
-    background: rgba(192, 192, 192, .75);
-    font-size: 16px;
+#main-title span{
+	color: #42a2ff;
+}
+
+#talk-bubble{
+	background: rgba(192, 192, 192, .75);
+	font-size: 16px;
+	height: 160px;
+	margin-left: -20%;
+	margin-top: 6%;
+	padding-left: 17%;
+	padding-right: 30px;
+	padding-top: 20px;
+	position: absolute;
+	width: 93%;
+	z-index: 5;
 }
 
 .outer_border{
@@ -204,6 +182,7 @@ p{
     padding-bottom: 5%;
     padding-top: 5%;
     background: url(../imgs/main-background.jpg);
+    background-size: contain;
     border-bottom: #474747 solid 5px;
   }
   
@@ -248,6 +227,7 @@ p{
 /* CONTACT & SOCIAL */
 #social_span{
     background: url(../imgs/grey-background1.jpg);
+    background-size: 100%;
     padding: 5%;
     text-align: center;
 }
@@ -334,6 +314,7 @@ div#append-here {
 #mobile_contact_banner{
     display: none;
 }
+    
   
   
 /* MEDIA QUERIES */ 
@@ -389,11 +370,15 @@ div#append-here {
     }
     #mobile_contact_banner{
         display: block;
-        background:white;
-        padding: 5%;
+        background: url(../imgs/grey-background1.jpg);
+        background-size: contain;
     }
-    
+    #mobile_contact_info{
+        background: white;
+        padding: 5%;
+        margin: 20px;
+        text-align: center;
+        border: #474747 solid 3px;
+    }
 }
-/* @media only screen and (max-width : 1020px) {
-
-} */
+    

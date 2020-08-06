@@ -6,8 +6,8 @@
 
   <div id="header">
     <div id="home-intro">
-      <h1>Michaela Roberts</h1><br>
-      <h2 style = "margin-top:-30px;">Data Engineer</h2>
+      <h1 style="color:white; text-align:center;">Michaela Roberts</h1><br>
+      <h2 style = "margin-top:-30px; color:white;">Data Engineer</h2>
     </div>
   </div>
   <br>
@@ -21,6 +21,7 @@
           <div id="main-title">
             <h1>I am a <span id="example2"></span></h1><br>
           </div>
+          <br>
           <div id="talk-bubble">
             <p> A driven Data Engineer who loves programming in Python. 
                 Has experience in back-end and front-end development. 
@@ -125,35 +126,29 @@
     <div id="social_span">
       <h2><u>Social</u></h2><br>
       <div class="columns">
-        <!-- Facebook -->
-        <div class="column is-2 icon-xl" id="FB">
-          <a href="https://www.facebook.com/mhalbur" target="blank">
-            <div class="icon facebook eclipse">&#xf09a;</div>
-          </a>
-        </div>
         <!-- github -->
-        <div class="column is-2 icon-xl" id="GH">
+        <div class="column icon-xl" id="GH">
           <a href="https://github.com/mhalbur" target="blank">
             <div class="icon github eclipse">&#xf113;</div>
           </a>
         </div>
         <!-- Linkedin -->
-        <div class="column is-2 icon-xl" id="LI">
+        <div class="column icon-xl" id="LI">
           <a href="https://www.linkedin.com/in/halbur-roberts/" target="blank">
             <div class="icon linkedin eclipse">&#xf0e1;</div>
           </a>
         </div>
           <!-- address -->
-          <div class="column is-2 icon-xl" id="YT">
-          <a href="#"><div class="icon address eclipse">&#xf015;</div>
+          <div class="column icon-xl" id="YT">
+            <a href="#"><div class="icon address eclipse">&#xf015;</div>
           </a>
         </div>
         <!-- phone -->
-        <div class="column is-2 icon-xl" id="GO">
+        <div class="column icon-xl" id="GO">
           <a href="#"><div class="icon phone eclipse">&#xf10b;</div></a>
         </div>
         <!-- email-->
-        <div class="column is-2 icon-xl" id="IG">
+        <div class="column icon-xl" id="IG">
           <a href="#"><div class="icon email eclipse">&#xf0e0;</div></a>
         </div>
       </div>
@@ -161,11 +156,12 @@
       <br>
       <div id="append-here"></div>
     </div>
-
     <div id="mobile_contact_banner">
-      <h2>Contact Me</h2>
-      <p><b>Email:</b><br>halbur.roberts@gmail.com</p>
-      <p><b>Address:</b><br>Des Moines, Iowa</p>
+      <div id="mobile_contact_info">
+        <h2>Contact Me</h2>
+        <p><b>Email:</b><br>halbur.roberts@gmail.com</p>
+        <p><b>Address:</b><br>Des Moines, Iowa</p>
+      </div>
     </div>
   </div>
 </body>
@@ -220,11 +216,6 @@
           $('#append-here').children().remove();
 
           switch ($(this).attr('id')) {
-            // Facebook
-            case "FB":
-              $('#append-here').append(before + "<h2><u>Facebook</u></h2> @mhalbur" + after);
-              $('#append-here').css('color', facebookBorderColor);
-              break;
 
             // github
             case "GH":
