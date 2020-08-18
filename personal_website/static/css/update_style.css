@@ -9,7 +9,6 @@ body {
 }
 
 /* NAVIGATION BAR */
-
 .navbar{
 	background-color: #474747;
 	border-bottom: white 3px solid;
@@ -19,8 +18,8 @@ body {
 	width: 100%;
 }
 
+
 /* BACKGROUND CLASSES */
-  
 .gray_background{
     background: url(../imgs/grey-background1.jpg);
     background-size: contain;
@@ -48,6 +47,7 @@ body {
 .picture_column img{
     background: white;
 }
+
 
 /* FONTS */
 .handwriting{
@@ -145,15 +145,16 @@ p{
 #talk-bubble{
 	background: rgba(192, 192, 192, .75);
 	font-size: 16px;
-	height: 160px;
+	height: auto;
 	margin-left: -20%;
-	margin-top: 6%;
+	margin-top: 4.75%;
 	padding-left: 17%;
 	padding-right: 30px;
 	padding-top: 20px;
 	position: absolute;
 	width: 93%;
-	z-index: 5;
+    z-index: 5;
+    font-size: 18px;
 }
 
 .outer_border{
@@ -252,7 +253,6 @@ p{
     text-align: center;
 }
   
-  
 #social_span .icon {
     position: relative;
     width: 70px;
@@ -299,7 +299,6 @@ p{
     border-color: #007bb5 !important;
 }
   
-  
 #append-here {
     width: 100%;
     min-height: 200px;
@@ -343,12 +342,13 @@ div#append-here {
         position: relative;
     }
     #talk-bubble{
-        text-align: center;
+        text-align: left;
         position: relative;
         height: auto;
         width: auto;
         padding: 5%;
         margin: 5%;
+        border: 3px #474747 solid;
     }
     #education-border{
         border: none;

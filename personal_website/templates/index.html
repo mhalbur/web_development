@@ -19,21 +19,23 @@
         </div>
         <div class="column">
           <div id="main-title">
-            <h1>I am a <span id="example2"></span></h1><br>
+            <h1>I am a <span id="typeit"></span></h1><br>
           </div>
           <br>
           <div id="talk-bubble">
-            <p> A driven Data Engineer who loves programming in Python. 
-                Has experience in back-end and front-end development. 
-                Work experience in ETL at Meredith Corporation primarily using Python, SQL, AWS, Snowflake, and Teradata. 
-                Additional skills in HTML, CSS, Flask, and Javascript.
-            </p>
+            <ul style="list-style:square; padding: 10px;">
+              <li>I am a driven Data Engineer who loves programming in Python. </li>
+              <li>I have work experience in ETL at Meredith Corporation since October 2017. </li>
+              <li>I primarily use Python, SQL, AWS, Snowflake, and Teradata </li>
+              <li>I have additional experience in back-end and front-end development using skills in HTML, CSS, Flask, and Javascript.</li>
+            </ul>
+            <br>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- begin of skills !-->
+    <!-- skills !-->
     <div class="gray_background skills_span">
       <h2>Career Related Skills</h2><br>
       <div class = "outer_border">
@@ -68,10 +70,8 @@
         </div>
       </div>
     </div>
-    <!-- end of skills !-->
 
     <!-- education and experience !-->
-
     <div id="education-span">
       <div id="education-border">
         <h1>Education and Experience</h1>
@@ -143,19 +143,14 @@
             <a href="#"><div class="icon address eclipse">&#xf015;</div>
           </a>
         </div>
-        <!-- phone -->
-        <div class="column icon-xl" id="GO">
-          <a href="#"><div class="icon phone eclipse">&#xf10b;</div></a>
-        </div>
         <!-- email-->
         <div class="column icon-xl" id="IG">
           <a href="#"><div class="icon email eclipse">&#xf0e0;</div></a>
         </div>
       </div>
-      <br>
-      <br>
       <div id="append-here"></div>
     </div>
+
     <div id="mobile_contact_banner">
       <div id="mobile_contact_info">
         <h2>Contact Me</h2>
@@ -163,11 +158,9 @@
         <p><b>Address:</b><br>Des Moines, Iowa</p>
       </div>
     </div>
+
   </div>
 </body>
-
-
-
 
 <footer>
   <script>
@@ -223,12 +216,6 @@
               $('#append-here').css('color', githubBorderColor);
               break;
 
-            // phone number
-            case "GO":
-              $('#append-here').append(before + '<h2><u>Phone number</u></h2> (515)-290-8689' + after);
-              $('#append-here').css('color', phoneBorderColor);
-              break;
-
             // LinkedIn
             case "LI":
               $('#append-here').append(before + '<h2><u>LinkedIn</u></h2> halbur-roberts' + after);
@@ -251,17 +238,15 @@
             default:
               $('#append-here').append("");
           }
-
         },
         function() {
           // Do nothing.
-          console.log($(this));
         });
     });
   </script>
 
   <script>
-    $('#example2').typeIt({
+    $('#typeit').typeIt({
       strings: ["Data Engineer.", "debugger.", "back-end developer.", "front-end developer.", "programmer.", "girl in code."],
       speed: 50,
       breakLines: false,
