@@ -3,13 +3,27 @@
     BECAUSE THE OTHER ONE IS GROSS, UNORGANIZED, AND OLD.
 */
 
-body {
-    max-width: 100%;
-    background: white;
+/* NEED TO ARRANGE */
+.element_span
+{
+    padding: 2% 1% 2% 1%;
+}
+ul
+{
+	list-style: square;
+	padding: 0 0 0 2%;
+}
+.gray_background
+{
+    background: url(../imgs/grey-background1.jpg);
+    background-size: contain;
+	border-bottom: #474747 solid 5px;
+	border-top: #474747 solid 5px;
 }
 
 /* NAVIGATION BAR */
-.navbar{
+.navbar
+{
 	background-color: #474747;
 	border-bottom: white 3px solid;
 	color: white;
@@ -18,11 +32,24 @@ body {
 	width: 100%;
 }
 
+.navbar-item
+{
+	color: white;
+}
 
-/* BACKGROUND CLASSES */
-.gray_background{
-    background: url(../imgs/grey-background1.jpg);
-    background-size: contain;
+#custom_header
+{
+	color: white;
+	font-family: 'Crete Round', serif;
+	font-size: 16px;
+	padding: 15px;
+	width: 100%;
+}
+
+#logo-box
+{
+	float: left;
+	width: 230px;
 }
 
 
@@ -107,271 +134,186 @@ p{
     max-width: 100%;
 }
 
-/* BIOGRAPHY */ 
-#biography_span{
+
+/* personal statement */ 
+#personal_statement_span
+{
 	background: url(../imgs/main-background.jpg);
 	background-size: cover;
-	padding-bottom: 5%;
 }
-
-#main-portrait{
-	margin-top: 3%;
+#main-portrait
+{
 	position: relative;
-	z-index: 10;
+	z-index: 1;
 }
-
-#main-portrait img{
+#main-portrait img
+{
 	border-radius: 50%;
-	height: 250px;
-	margin-left: 5%;
-	margin-top: 3%;
-	width: 250px;
 }
-
-#main-title h1{
-	font-family: 'acme',sans-serif;
-	font-size: 50.7px;
-	margin-bottom: 3%;
-	margin-left: -3%;
-	margin-top: 4%;
-	max-width: 100%;
-	position: absolute;
-}
-
-#main-title span{
-	color: #42a2ff;
-}
-
-#talk-bubble{
+#talk-bubble
+{
 	background: rgba(192, 192, 192, .75);
 	font-size: 16px;
-	height: auto;
-	margin-left: -20%;
-	margin-top: 4.75%;
-	padding-left: 17%;
-	padding-right: 30px;
-	padding-top: 20px;
-	position: absolute;
-	width: 93%;
-    z-index: 5;
-    font-size: 18px;
+	margin: 2% 0 0 -10%;
+	padding: 1% 1% 2% 15%;
 }
-
-.outer_border{
-    margin-right: 3%;
-    margin-left: 3%;
+#talk-bubble h1
+{
+    font-size: 55px;
+    padding: 0 0 0 .5%;
+    text-align: left;
+}
+#typeit
+{
+	color: #42a2ff;
 }
 
 
 /* SKILLS */
-.skills_span{
-    padding-bottom: 5%;
-    padding-top: 5%;
-    border-bottom: #474747 solid 5px;
-    border-top: #474747 solid 5px;
-}
-
-.skills{
-    margin: 1%;
-    color: white;
-    border: 3px #474747 solid;
+.skills
+{
+	border: 3px #474747 solid;
+	color: white;
+	margin: 1%;
 }
 
 
 /* EDUCATION AND EXPERIENCE */
-#education-span{
-    padding-bottom: 5%;
-    padding-top: 5%;
-    background: url(../imgs/main-background.jpg);
-    background-size: contain;
-    border-bottom: #474747 solid 5px;
-  }
-  
-#education-border {
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 40px;
-    border: dotted 8px #474747;
+#education-span
+{
+	background: url(../imgs/main-background.jpg);
+	background-size: contain;
 }
-
-#education-heading {
-    overflow: auto;
-    background-color: #474747;
-    color: white!important;
-    border-bottom:#42a2ff solid 5px;
-    padding: .5%;
+#education-border
+{
+	border: dotted 8px #474747;
+	margin: 2% 3% 2% 3%;
+	padding: 2%;
 }
-
-#education-heading h2{
-    color: white!important;
+#education-span h1
+{
+	margin: 0 2% 0 2%;
 }
-  
-#education-content {
-    border: 2px solid rgba(169, 169, 169, .2);
-    background-color: white;
-    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .5);
-    padding: 2%;
-    font-size: 18px;
+#education-heading
+{
+	background-color: #474747;
+	border-bottom: #42a2ff solid 5px;
+    padding: 1%;
 }
-
-#education-content ul li{
-    list-style: none;
+#education-heading h1{
+    color:white;
+    font-size: 40px;
 }
-
-#education-content ul li ul li{
-    list-style: disc outside none;
-    display: list-item;
-    margin-left: 3em;
+#education-content
+{
+	background-color: white;
+	border: 2px solid rgba(169, 169, 169, .2);
+	box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .5);
+	font-size: 20px;
+	padding: 2%;
 }
 
 
 /* CONTACT & SOCIAL */
-#social_span{
-    background: url(../imgs/grey-background1.jpg);
-    background-size: 100%;
-    padding: 5%;
-    text-align: center;
+.icon-xl
+{
+	padding-left: 5%;
 }
-
-.icon-xl{
-    padding-left: 5%;
+.icon-xl .icon
+{
+	background-color: #fff;
+	border: 6px solid #474747;
+	color: #474747;
+	font-size: 42px;
+	line-height: 52px;
+	overflow: visible;
+	text-shadow: none;
 }
-
-#social_span .icon-xl .icon {
-    color: #474747;
-    overflow: visible;
-    border: 6px solid #474747;
-    background-color: #fff;
-    text-shadow: none;
-    font-size: 42px;
-    line-height: 52px;
+.eclipse
+{
+	border-radius: 50px;
+	height: 63px;
+	text-align: center;
 }
-  
-#social_span .eclipse {
-    height: 63px;
-    border-radius: 50px;
-    text-align: center;
+.icon
+{
+	color: #fff;
+	float: left;
+	font-family: 'FontAwesome';
+	font-size: 35px;
+	height: 65px;
+	line-height: 65px;
+	margin: 10px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	width: 70px;
 }
-  
-#social_span .icon {
-    position: relative;
-    width: 70px;
-    height: 65px;
-    float: left;
-    margin: 10px;
-    color: #fff;
-    overflow: hidden;
-    text-align: center;
-    text-align: center;
-    font-family: 'FontAwesome';
-    font-size: 35px;
-    line-height: 65px;
+.icon:hover
+{
+	border-color: #007bb5 !important;
+	color: #007bb5 !important;
 }
-  
-  /* Hover Colors */
-.facebook:hover {
-    color: #007bb5 !important;
-    border-color: #007bb5 !important;
+#append-here p
+{
+	color: #42a2ff;
+	text-align: center;
 }
-  
-.github:hover {
-    color: #007bb5 !important;
-    border-color: #007bb5 !important;
+#mobile_contact_banner
+{
+	display: none;
 }
-  
-.phone:hover {
-    color: #007bb5 !important;
-    border-color: #007bb5 !important;
-}
-  
-.linkedin:hover {
-    color: #007bb5 !important;
-    border-color: #007bb5 !important;
-}
-  
-.email:hover {
-    color: #007bb5 !important;
-    border-color: #007bb5 !important;
-}
-  
-.address:hover {
-    color: #007bb5 !important;
-    border-color: #007bb5 !important;
-}
-  
-#append-here {
-    width: 100%;
-    min-height: 200px;
-}
-
-div#append-here {
-    display: block;
-    color: #000;
-    font-size: 2em;
-}
-
-#mobile_contact_banner{
-    display: none;
-}
-    
   
   
 /* MEDIA QUERIES */ 
-@media screen and (max-width : 640px) {
-    body {
-        width: 100%;
-    }
-    #header{
-        display: none;
-    }
+@media screen and (max-width : 1000px) {
+
     #home-intro{
         display: none; 
     }
     #page{
-        top: 9.5%;
+        top: 0%;
     }
-    #main-portrait{
-        margin:0;
+
+    /*personal statement*/
+    #main-portrait
+    {
+        margin: 0 15% 0 15%;
     }
-    #main-portrait{
-        margin-left:15%;
-        margin-right:15%;
-    }
-    #main-title h1{
-        margin: 5%;
-        position: relative;
-    }
-    #talk-bubble{
-        text-align: left;
-        position: relative;
-        height: auto;
-        width: auto;
-        padding: 5%;
-        margin: 5%;
+    #talk-bubble
+    {
         border: 3px #474747 solid;
+        margin: 5%;
+        padding: 5%;
     }
-    #education-border{
+    #talk_bubble h1
+    {
+        font-size: 30px;
+        margin: 0 0 0 5%;
+    }
+
+    /*education and experience*/
+    #education-border
+    {
         border: none;
-        margin: auto;
         padding: 0;
     }
-    #education-heading h2{
-        font-size:30px;
+    #education-heading h1
+    {
+        font-size: 30px;
     }
-    #education-heading h3{
-        font-size:20px;
+    #education-content
+    {
+        font-size: 14px;
+        padding: 5%;
     }
-    #education-content{
-        font-size:14px;
-        padding:10px;
-    }
+
+    /*social/contact me */
     #social_span{
         display: none;
     }
     #mobile_contact_banner{
         display: block;
-        background: url(../imgs/grey-background1.jpg);
-        background-size: contain;
     }
     #mobile_contact_info{
         background: white;
