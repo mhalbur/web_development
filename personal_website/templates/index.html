@@ -1,18 +1,27 @@
-<div style = "position: fixed;">{% include "base.html"%}</div>
+
 <title>Michaela Roberts</title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body>
 
     <div id="header">
+        <div style = "position: fixed;">{% include "base.html"%}</div>
         <div id="home-intro"><h1 style="color:white; text-align:center;">Resume</h1><br></div>
     </div>
     
     
     <div id="page">
 
+        <div id = "media_navbar">
+          <div class = "column">
+              <div class = "column"><h1>Michaela Roberts</h1></div>
+              <div class = "column"><a href="{{ url_for('index') }}"><p><u>Resume</u></p></a></div>
+              <div class = "column"><a href="{{ url_for('about_me') }}"><p><u>About Me</u></p></a></div>
+          </div>
+      </div>
+
         <!-- personal statement-->
-        <div class = "element_span" id = "personal_statement_span">
+        <div class = "element_span blue_background">
             <div class = "columns">
                 <div id="main-portrait" class="column is-2">
                     <img src="{{ url_for('static', filename='imgs/my-picture.jpg') }}" alt="My Portrait">
@@ -69,7 +78,7 @@
 
 
       <!-- education and experience !-->
-      <div class= "element_span" id="education-span">
+      <div class= "element_span blue_background" id="education-span">
           <div id="education-border">
               <h1>Education and Experience</h1>
               <div class = 'column'> 

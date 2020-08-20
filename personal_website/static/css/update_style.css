@@ -1,9 +1,4 @@
-/* 
-    NEW CSS FILE THAT I CREATED TO TRANSFER CUSTOM DESIGN TO CLEAN UP/ORGANIZE
-    BECAUSE THE OTHER ONE IS GROSS, UNORGANIZED, AND OLD.
-*/
-
-/* NEED TO ARRANGE */
+/* NEED TO ORGANIZE SOMEWHERE  - GENERIC FUNCTIONS*/
 .element_span
 {
     padding: 2% 1% 2% 1%;
@@ -20,6 +15,12 @@ ul
 	border-bottom: #474747 solid 5px;
 	border-top: #474747 solid 5px;
 }
+.blue_background
+{
+	background: url(../imgs/main-background.jpg);
+    background-size: contain;
+}
+
 
 /* NAVIGATION BAR */
 .navbar
@@ -31,12 +32,10 @@ ul
 	position: fixed;
 	width: 100%;
 }
-
 .navbar-item
 {
 	color: white;
 }
-
 #custom_header
 {
 	color: white;
@@ -45,13 +44,30 @@ ul
 	padding: 15px;
 	width: 100%;
 }
-
 #logo-box
 {
 	float: left;
 	width: 230px;
 }
+#media_navbar
+{
+	background-color: #474747;
+	color: white;
+	display:none;
+	border-bottom: #42a2ff solid 5px;
+}
+#media_navbar h1
+{
+	color: white;
+	text-align: left;
+	border-bottom: white 2px solid;
+}
 
+#media_navbar p
+{
+	color: white;
+	font-size: 16px;
+}
 
 /* ABOUT ME */
 .about_column {
@@ -108,7 +124,6 @@ p{
 
 /* RESUME */
 #header {
-    margin-top: 100px;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -129,18 +144,13 @@ p{
 #page{
     z-index: 100;
     position: relative;
-    top: 80%;
+    top: 65%;
     width: 100%;
     max-width: 100%;
 }
 
 
 /* personal statement */ 
-#personal_statement_span
-{
-	background: url(../imgs/main-background.jpg);
-	background-size: cover;
-}
 #main-portrait
 {
 	position: relative;
@@ -154,8 +164,10 @@ p{
 {
 	background: rgba(192, 192, 192, .75);
 	font-size: 16px;
-	margin: 2% 0 0 -10%;
+	margin: 0;
+	margin: 2.5% 0 0 -10%;
 	padding: 1% 1% 2% 15%;
+	top: 50%;
 }
 #talk-bubble h1
 {
@@ -179,11 +191,6 @@ p{
 
 
 /* EDUCATION AND EXPERIENCE */
-#education-span
-{
-	background: url(../imgs/main-background.jpg);
-	background-size: contain;
-}
 #education-border
 {
 	border: dotted 8px #474747;
@@ -266,61 +273,67 @@ p{
   
   
 /* MEDIA QUERIES */ 
-@media screen and (max-width : 1000px) {
-
-    #home-intro{
-        display: none; 
-    }
-    #page{
-        top: 0%;
-    }
-
-    /*personal statement*/
-    #main-portrait
-    {
-        margin: 0 15% 0 15%;
-    }
-    #talk-bubble
-    {
-        border: 3px #474747 solid;
-        margin: 5%;
-        padding: 5%;
-    }
-    #talk_bubble h1
-    {
-        font-size: 30px;
-        margin: 0 0 0 5%;
-    }
-
-    /*education and experience*/
-    #education-border
-    {
-        border: none;
-        padding: 0;
-    }
-    #education-heading h1
-    {
-        font-size: 30px;
-    }
-    #education-content
-    {
-        font-size: 14px;
-        padding: 5%;
-    }
-
-    /*social/contact me */
-    #social_span{
-        display: none;
-    }
-    #mobile_contact_banner{
-        display: block;
-    }
-    #mobile_contact_info{
-        background: white;
-        padding: 5%;
-        margin: 20px;
-        text-align: center;
-        border: #474747 solid 3px;
-    }
+@media screen and (max-width : 1000px)
+{
+	body {
+		overflow:hidden;
+	}
+	#header
+	{
+		display: none;
+	}
+	#page
+	{
+		top: 0%;
+		max-width:100%
+	}
+	#media_navbar
+	{
+		display:block;
+	}
+	#main-portrait
+	{
+		margin: 0 15% 0 15%;
+	}
+	#talk-bubble
+	{
+		border: 3px #474747 solid;
+		margin: 5%;
+		padding: 5%;
+	}
+	#talk-bubble h1
+	{
+		font-size: 35px!important;
+	}
+	#education-border
+	{
+		border: none;
+		padding: 0;
+	}
+	#education-heading h1
+	{
+		font-size: 30px;
+	}
+	#education-content
+	{
+		font-size: 14px;
+		padding: 5%;
+	}
+	#social_span
+	{
+		display: none;
+	}
+	#mobile_contact_banner
+	{
+		display: block;
+	}
+	#mobile_contact_info
+	{
+		background: white;
+		border: #474747 solid 3px;
+		margin: 20px;
+		padding: 5%;
+		text-align: center;
+	}
 }
     
